@@ -142,7 +142,7 @@ export function uniqueColumnNameValidation(
   value: unknown,
   props: TableWidgetProps,
   _?: any,
-) {
+): any {
   const tableColumns = _.map(value, "label");
   const duplicates = tableColumns.filter(
     (val: string, index: number, arr: string[]) => arr.indexOf(val) !== index,
